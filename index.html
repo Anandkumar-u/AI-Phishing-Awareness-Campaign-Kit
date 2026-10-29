@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical, interactive phishing awareness learning kit.">
+  <title>Spot the Phish | Awareness Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <nav aria-label="Main navigation"><a class="brand" href="#">🛡️ Spot the Phish</a><a href="#quiz">Take the quiz</a></nav>
+    <div class="hero-content">
+      <p class="eyebrow">CYBER SAFETY • THINK BEFORE YOU CLICK</p>
+      <h1>Pause. Check. Report.</h1>
+      <p>Learn to recognize phishing attempts and make safer decisions online.</p>
+      <a class="button" href="#checklist">Start learning</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <h2>What is phishing?</h2>
+      <p>Phishing is a social-engineering technique in which an attacker tries to trick someone into revealing information, opening a harmful file, or taking an unsafe action. It can arrive by email, text message, phone call, social media, or collaboration apps.</p>
+    </section>
+
+    <section id="checklist" class="section">
+      <h2>Six warning signs</h2>
+      <div class="cards">
+        <article class="card"><span>⏰</span><h3>Urgency or threats</h3><p>“Act now” or “your account closes today” pressures you to skip checks.</p></article>
+        <article class="card"><span>🔗</span><h3>Unexpected links</h3><p>Check the actual destination carefully. When unsure, navigate to the official site yourself.</p></article>
+        <article class="card"><span>👤</span><h3>Unusual sender</h3><p>Look for misspellings, unexpected domains, or a display name that does not match the address.</p></article>
+        <article class="card"><span>🔐</span><h3>Requests for secrets</h3><p>Be cautious if a message asks for passwords, one-time codes, or payment details.</p></article>
+        <article class="card"><span>📎</span><h3>Unexpected attachments</h3><p>Confirm with the sender through a separate trusted channel before opening them.</p></article>
+        <article class="card"><span>📝</span><h3>Odd wording or context</h3><p>Unexpected requests, strange grammar, or a mismatch with normal procedures deserve a second look.</p></article>
+      </div>
+    </section>
+
+    <section class="safe-example section">
+      <div>
+        <p class="eyebrow">FICTIONAL TRAINING EXAMPLE</p>
+        <h2>Can you spot the red flags?</h2>
+        <p><strong>Subject:</strong> URGENT: Student account will be deleted!</p>
+        <p>“Hello student, confirm your password immediately or lose access. Click the link below.”</p>
+        <p class="note">This is a fictional example. It includes no working link and does not represent a real institution.</p>
+      </div>
+      <ul>
+        <li>Threat of account deletion</li>
+        <li>Pressure to act immediately</li>
+        <li>Request for a password</li>
+        <li>Generic greeting and no verified context</li>
+      </ul>
+    </section>
+
+    <section class="section steps">
+      <h2>What should you do?</h2>
+      <ol>
+        <li><strong>Pause.</strong> Do not click, reply, or open unexpected attachments.</li>
+        <li><strong>Verify.</strong> Contact the person or organization using a trusted, separate channel.</li>
+        <li><strong>Report.</strong> Use your institution's approved reporting method or contact its IT team.</li>
+        <li><strong>Recover.</strong> If you already shared a password, change it from the official site and contact IT immediately. Enable multifactor authentication where available.</li>
+      </ol>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <h2>Knowledge check</h2>
+      <p>Choose the safest response. Your score stays in this browser session; no answers are sent anywhere.</p>
+      <div id="quiz-box" class="quiz-box" aria-live="polite">
+        <p id="question-count" class="eyebrow"></p>
+        <h3 id="question"></h3>
+        <div id="answers" class="answers"></div>
+        <p id="feedback" role="status"></p>
+        <button id="next" class="button" disabled>Next question</button>
+      </div>
+      <p id="result" class="result" hidden></p>
+    </section>
+
+    <section class="section report-box">
+      <h2>Remember the rule</h2>
+      <p><strong>Stop, verify through a trusted channel, and report suspicious messages.</strong> If a message creates panic or asks for secrets, take extra care.</p>
+    </section>
+  </main>
+  <footer><p>AI Phishing Awareness Campaign Kit • Educational use • No personal data collected</p></footer>
+</body>
+</html>
